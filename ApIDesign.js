@@ -60,20 +60,41 @@ app.listen(port, () => {
 });
 
 
+// Docs
+Example request
+GET / api / anomalies ? start_date = 2025-01-01 & end_date=2025-01 - 31
+
+Example response(JSON)
+[
+    {
+        "anomaly_id": 1,
+        "activity_id": 101,
+        "anomaly_type": "fraud",
+        "activity_timestamp": "2025-01-15T10:00:00Z",
+        "fraud_score": 85
+    },
+    {
+        "anomaly_id": 2,
+        "activity_id": 102,
+        "anomaly_type": "anomaly",
+        "activity_timestamp": "2025-01-20T14:30:00Z",
+        "anomaly_score": 90
+    }
+]
 
 
 // What best practices would you follow when designing APIs for external
 // systems ?
 // Here are some best practices to follow when designing APIs for external systems:
 
-1. Use HTTPS: Always use HTTPS to ensure secure communication between your application and external systems.
+// 1. Use HTTPS: Always use HTTPS to ensure secure communication between your application and external systems.
 
-2. Use JSON: JSON is a widely supported and easy - to - read format for transmitting data between systems.
+// 2. Use JSON: JSON is a widely supported and easy - to - read format for transmitting data between systems.
 
-3. Use API keys: Use API keys to authenticate and authorize requests to your APIs.Avoid hardcoding API keys into your code.
+// 3. Use API keys: Use API keys to authenticate and authorize requests to your APIs.Avoid hardcoding API keys into your code.
 
-4. Rate limiting: Implement rate limiting to prevent abuse of your APIs.Set limits on the number of requests a client can make within a certain time period.
+// 4. Rate limiting: Implement rate limiting to prevent abuse of your APIs.Set limits on the number of requests a client can make within a certain time period.
 
-5. Error handling: Implement proper error handling in your APIs to provide clear and understandable error messages to clients.
+// 5. Error handling: Implement proper error handling in your APIs to provide clear and understandable error messages to clients.
 
-6. Versioning: Use versioning in your APIs to allow clients to update their applications without breaking existing functionality.
+// 6. Versioning: Use versioning in your APIs to allow clients to update their applications without breaking existing functionality.
