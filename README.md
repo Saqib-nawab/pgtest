@@ -1,3 +1,7 @@
+# Word Docs Issues
+
+Dear authorised person, my word/docs editor is malfunctioned which is why i am answering all the questions here in github
+
 # Frontend Steps taken
 
 ## Anomaly Detection Dashboard
@@ -176,14 +180,14 @@ Backend
 ```
 Node.js
 Express.js
-MongoDB
+MongoDBs
 SQL Server
 JSON Web Tokens (JWT)
 Mongoose
 MSSQL
-Contributing
 ```
 
+Author
 Saqib Nawab
 Email: saqibnawab823@gmail.com
 GitHub: https://github.com/Saqib-nawab

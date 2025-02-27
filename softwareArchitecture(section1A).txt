@@ -4,8 +4,8 @@
 
 1. Monolithic Architecture:
 //definition of monolithic architecture
-A monolithic architecture is a single codebase that encapsulates all the functionality of an application.
-Monolithic architectures are typically more complex and require significant development effort.They can be difficult to scale and maintain, as changes to the codebase can affect multiple parts of the application.
+A monolithic architecture is a single codebase that encapsulate all the functionalities of any certain application.
+Monolithic architectures are usually more complex and requires significant amount of development effort.They can be difficult to scale and maintain, for changes to the codebase can affect multiple parts of the application.
 
 2. microservices architectures:
 //difinition of microservices architecture
@@ -31,12 +31,12 @@ For a scalable analytics platform, a microservices architecture would be more su
 - ML Server: Python, TensorFlow, or PyTorch
 4.devops:
 - Documentation: AWS Documentation Service(AWS Docs)
-    - Deployment: AWS Elastic Beanstalk, AWS Elastic Container Service(ECS), AWS Fargate
-        - Scaling: AWS Auto Scaling, AWS Elastic Load Balancer(ELB)
-            - Continuous Integration / Continuous Deployment(CI / CD): AWS CodePipeline, Jenkins, gitlab, github
-                - Testing: AWS CodePipeline, AWS CodeBuild, AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy
-                    - CI / CD: AWS CodePipeline, AWS CodeBuild(Jenkins)
-                        - Monitoring: AWS CloudWatch
-                            - Containerization: Docker
-                                - Load Balancing: AWS Elastic Load Balancer
-                                    - Security: AWS Identity and Access Management(IAM)
+- Deployment: AWS Elastic Beanstalk, AWS Elastic Container Service(ECS), AWS Fargate
+- Scaling: AWS Auto Scaling, AWS Elastic Load Balancer(ELB)
+- Continuous Integration / Continuous Deployment(CI / CD): AWS CodePipeline, Jenkins, gitlab, github
+- Testing: AWS CodePipeline, AWS CodeBuild, AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy
+- CI / CD: AWS CodePipeline, AWS CodeBuild(Jenkins)
+- Monitoring: AWS CloudWatch
+- Containerization: Docker
+- Load Balancing: AWS Elastic Load Balancer
+- Security: AWS Identity and Access Management(IAM)
