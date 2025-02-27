@@ -31,6 +31,7 @@ db.connect(err => {
     console.log('Connected to the database');
 });
 
+
 // Define the endpoint to retrieve anomalies for a specific period
 app.get('/api/anomalies', (req, res) => {
     const { start_date, end_date } = req.query;
@@ -61,26 +62,26 @@ app.listen(port, () => {
 
 
 // Docs
-Example request
-GET / api / anomalies ? start_date = 2025-01-01 & end_date=2025-01 - 31
+// Example request
+// GET / api / anomalies ? start_date = 2025-01-01 & end_date=2025-01 - 31
 
-Example response(JSON)
-[
-    {
-        "anomaly_id": 1,
-        "activity_id": 101,
-        "anomaly_type": "fraud",
-        "activity_timestamp": "2025-01-15T10:00:00Z",
-        "fraud_score": 85
-    },
-    {
-        "anomaly_id": 2,
-        "activity_id": 102,
-        "anomaly_type": "anomaly",
-        "activity_timestamp": "2025-01-20T14:30:00Z",
-        "anomaly_score": 90
-    }
-]
+// Example response(JSON)
+// [
+//     {
+//         "anomaly_id": 1,
+//         "activity_id": 101,
+//         "anomaly_type": "fraud",
+//         "activity_timestamp": "2025-01-15T10:00:00Z",
+//         "fraud_score": 85
+//     },
+//     {
+//         "anomaly_id": 2,
+//         "activity_id": 102,
+//         "anomaly_type": "anomaly",
+//         "activity_timestamp": "2025-01-20T14:30:00Z",
+//         "anomaly_score": 90
+//     }
+// ]
 
 
 // What best practices would you follow when designing APIs for external
