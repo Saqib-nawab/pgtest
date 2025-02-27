@@ -1,8 +1,10 @@
 # Word Docs Issues
 
-Dear authorised person, my word/docs editor is malfunctioned which is why i am answering all the questions here in github
+Dear Professor, my word/docs editor is malfunctioned which is why i am answering all the questions here in github
 
 # Frontend Steps taken
+
+Here are the steps taken during Hands On experience
 
 ## Anomaly Detection Dashboard
 
@@ -47,7 +49,6 @@ ng serve
 ```
 
 Open your browser and navigate to:
-
 http://localhost:4200/dashboard
 
 ## Backend Setup
@@ -57,7 +58,6 @@ http://localhost:4200/dashboard
 Node.js and npm installed.
 MongoDB and SQL Server installed and running.
 Steps
-
 Navigate to the backend project:
 
 ```
@@ -72,7 +72,7 @@ npm install
 
 Set up environment variables:
 Create a .env file in the express-backend folder.
-Add the following variables:
+Add the following variables(normally these variables will be meaningful but since it's a practice application which is why i don't bother much and i am making it publically accessible):
 
 ```
 MONGO_URI=mongodb://localhost:27017/anomalies
@@ -88,7 +88,6 @@ npm run dev
 ```
 
 The server will start at:
-
 http://localhost:5000
 Running the Application
 
@@ -107,7 +106,6 @@ ng serve
 ```
 
 Access the application in your browser:
-
 http://localhost:4200
 
 API Endpoints
