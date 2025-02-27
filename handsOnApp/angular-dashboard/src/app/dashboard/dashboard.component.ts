@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { NgChartsModule } from 'ng2-charts';
+import { NgChartsStandaloneModule } from '../ng-charts.standalone'; // Import the wrapper
 import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, NgChartsModule],
+  imports: [CommonModule, HttpClientModule, NgChartsStandaloneModule], // Use the wrapper
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
