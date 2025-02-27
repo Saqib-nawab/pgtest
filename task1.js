@@ -1,0 +1,42 @@
+// 1. Software Architecture(10 points)
+// o Explain the differences between monolithic and microservices architecture.
+// Which would you choose for a scalable analytics platform and why ?
+
+1. Monolithic Architecture:
+//definition of monolithic architecture
+A monolithic architecture is a single codebase that encapsulates all the functionality of an application.
+Monolithic architectures are typically more complex and require significant development effort.They can be difficult to scale and maintain, as changes to the codebase can affect multiple parts of the application.
+
+2. microservices architectures:
+//difinition of microservices architecture
+Microservices architecture is a modular and decoupled approach to building applications.Each microservice is responsible for a specific functionality and communicates with other microservices using APIs or message queues.
+    Microservices architectures are more efficient and scalable, as each microservice can be developed, deployed, and scaled independently.They can be easier to maintain and update, as changes can be made to a single microservice without affecting other services.
+
+//listing the difference between monolithic and microservices architectures:
+-> Monolithic architecture: Single codebase, tightly coupled, difficult to scale, and complex to maintain.
+-> Microservices architecture: Multiple microservices, loosely coupled, easier to scale, and easier to maintain.
+
+// Which would you choose for a scalable analytics platform and why ?
+For a scalable analytics platform, a microservices architecture would be more suitable.Microservices can be developed, deployed, and scaled independently, allowing for easier scaling, fault tolerance, and efficient resource utilization.Additionally, microservices can be developed using different programming languages and technologies, making it easier to integrate with other systems and services.
+
+// Describe how you would design an architecture that combines UI, backend,
+//     and ML server components.
+1. UI:
+- Frontend: Angular
+2. Backend:
+- Backend: Node.js, Express.js
+    - API Gateway: AWS API Gateway
+        - Database: PostgreSQL, MongoDB
+3. ML Server:
+- ML Server: Python, TensorFlow, or PyTorch
+4.devops:
+- Documentation: AWS Documentation Service(AWS Docs)
+    - Deployment: AWS Elastic Beanstalk, AWS Elastic Container Service(ECS), AWS Fargate
+        - Scaling: AWS Auto Scaling, AWS Elastic Load Balancer(ELB)
+            - Continuous Integration / Continuous Deployment(CI / CD): AWS CodePipeline, Jenkins, gitlab, github
+                - Testing: AWS CodePipeline, AWS CodeBuild, AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy
+                    - CI / CD: AWS CodePipeline, AWS CodeBuild(Jenkins)
+                        - Monitoring: AWS CloudWatch
+                            - Containerization: Docker
+                                - Load Balancing: AWS Elastic Load Balancer
+                                    - Security: AWS Identity and Access Management(IAM)
