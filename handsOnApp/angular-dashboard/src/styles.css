@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    padding: 20px;
+}
+
+.chart-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 10px;
+    }
+}
